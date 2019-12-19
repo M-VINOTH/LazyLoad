@@ -4,9 +4,12 @@
 import PackageDescription
 
 let package = Package(
+    
     name: "LazyLoad",
+    platforms:[.iOS(.v11),.tvOS(.v11)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
+        
         .library(
             name: "LazyLoad",
             targets: ["LazyLoad"]),
@@ -20,7 +23,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "LazyLoad",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources/LazyLoad"),
         .testTarget(
             name: "LazyLoadTests",
             dependencies: ["LazyLoad"]),
