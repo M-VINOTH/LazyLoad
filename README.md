@@ -1,2 +1,2 @@
-# Lazy_Load-SPM
+# LazyLoad
 This repository has swift package manager to load image from server.
